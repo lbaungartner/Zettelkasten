@@ -10,7 +10,7 @@ read note_number
 
 # Create a new note file with the title and timestamp in the filename
 timestamp=$(date +"%Y%m%d%H%M")
-filename="[${timestamp}, ${note_number}] ${title}.md"
+filename="[${note_number}, ${timestamp}] ${title}.md"
 touch "$filename"
 
 # Open the new note file in Visual Studio Code
