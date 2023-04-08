@@ -16,9 +16,6 @@ touch "$filename"
 # Open the new note file in Visual Studio Code
 code "$filename"
 
-# Wait for user to finish editing note and close Visual Studio Code
-while ps aux | grep -q "[V]isual Studio Code"; do sleep 1; done
-
 # Add, commit, and push the new note file to GitHub
 gh auth login
 gh repo create
